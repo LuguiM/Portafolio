@@ -1,0 +1,19 @@
+{
+    "es": {
+        "nav.home": "Inicio",
+        "nav.experience": "Experiencia",
+        "nav.technologies": "Tecnologías",
+        "nav.projects": "Servicios",
+        "nav.contact": "Contacto",
+        "nav.portfolio": "Portafolio",
+        "nav.cv": "CV"
+    },
+    "en": {
+        "nav.home": "Home",
+        "nav.experience": "Experience",
+        "nav.technologies": "Technologies",
+        "nav.projects": "Services",
+        "nav.contact": "Contact",
+        "nav.portfolio": "Portfolio"
+    }
+}

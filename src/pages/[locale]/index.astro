@@ -1,0 +1,19 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+export async function getStaticPaths() {
+  return [
+    { params: { locale: 'en' } },
+    { params: { locale: 'es' } },
+  ];
+}
+---
+
+<Layout>
+    <p>{t('nav.cv')}</p>  
+</Layout>
