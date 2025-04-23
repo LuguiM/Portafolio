@@ -1,0 +1,28 @@
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const navOptions = [
+    { name: t("nav.home"), path: "#home" },
+    { name: t("nav.experience"), path: "#experience" },
+    { name: t("nav.technologies"), path: "#technologies" },
+    { name: t("nav.projects"), path: "#projects" },
+    { name: t("nav.contact"), path: "#contact" },
+];
+---
+
+<nav class="rounded-lg text-primary p-5 mx-10 border border-secondary">
+    <ul class="flex gap-8">
+        {
+            navOptions.map((option) => (
+                <li>
+                    <a href={option.path} class="text-[16px]/[32px]">{option.name}</a>
+                </li>
+            ))
+        }
+    </ul>
+</nav>
+
+<style></style>
