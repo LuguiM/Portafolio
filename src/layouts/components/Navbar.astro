@@ -1,10 +1,9 @@
 ---
 import SwitchTheme from "./switchTheme.astro";
 import SwitchLenguage from "./switchLenguage.astro";
-import Icon from "../../components/icon.astro";
-import Button from "../../components/button.astro";
-import { useTranslations } from "../../i18n/utils";
-import { fade } from "astro:transitions";
+import Icon from "@components/icon.astro";
+import Button from "@components/button.astro";
+import { useTranslations } from "@i18n/utils";
 
 const { lang } = Astro.props;
 const t = useTranslations(lang);
