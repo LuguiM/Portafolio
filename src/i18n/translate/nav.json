@@ -6,7 +6,9 @@
         "nav.projects": "Proyectos",
         "nav.contact": "Contacto",
         "nav.portfolio": "Portafolio",
-        "nav.cv": "CV"
+        "nav.cv": "CV",
+        "nav.theme": "Tema",
+        "nav.language":"Idioma"
     },
     "en": {
         "nav.home": "Home",
@@ -14,6 +16,8 @@
         "nav.technologies": "Technologies",
         "nav.projects": "Proyectos",
         "nav.contact": "Contact",
-        "nav.portfolio": "Portfolio"
+        "nav.portfolio": "Portfolio",
+        "nav.theme": "Theme",
+        "nav.language":"Language"
     }
 }

@@ -1,19 +1,25 @@
 ---
 import Icon from "@components/icon.astro";
+import { useTranslations } from "@i18n/utils";
+
+const { lang = "es" } = Astro.props;
+const t = useTranslations(lang);
 ---
 
-<button type="button" id="theme-selector">
-  <span class="sr-only">
-    Enable
-    <span class="dark:hidden">light</span>
-    <span class="hidden dark:inline">dark</span>
-    mode
-  </span>
+<div class="tooltip" data-tip={t("nav.theme")}>
+  <button type="button" id="theme-selector">
+    <span class="sr-only">
+      Enable
+      <span class="dark:hidden">light</span>
+      <span class="hidden dark:inline">dark</span>
+      mode
+    </span>
 
-  <Icon icon="sun" className="hidden dark:inline" color="#efefef" />
+    <Icon icon="sun" className="hidden dark:inline text-white" />
 
-  <Icon icon="moon" className="dark:hidden" color='#215373' />
-</button>
+    <Icon icon="moon" className="dark:hidden text-primary"  />
+  </button>
+</div>
 
 <script>
   document.getElementById("theme-selector")?.addEventListener("click", () => {

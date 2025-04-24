@@ -12,7 +12,8 @@
     font-style: normal;
 }
 
-html, body {
+html,
+body {
     font-family: "Quantico", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -23,7 +24,9 @@ html, body {
 }
 
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+    themes: false;
+  }
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -43,6 +46,7 @@ html, body {
 
     --color-primary: #215373;
     --color-secondary: #363A4B;
+    --color-accent: #369294;
     --color-white: #efefef;
     --color-grey: #D9D9D9;
     --color-ligth-blue: #51ABAD;
@@ -50,6 +54,7 @@ html, body {
     --color-black-2: #353535;
     --color-aqua: #369294;
 }
+
 
 .nav-container {
     @apply flex items-center justify-center gap-x-8 rounded-lg p-5 border border-secondary dark:border-aqua;
@@ -59,6 +64,10 @@ html, body {
     @apply bg-white text-primary dark:bg-black dark:text-white;
 }
 
+/* tooltips */
+.tooltip {
+    @apply tooltip tooltip-primary dark:tooltip-accent text-white;
+}
 
 /* buttons */
 .base-button {
@@ -72,4 +81,3 @@ html, body {
 .base-button.filled {
     @apply bg-primary dark:bg-aqua text-white hover:bg-aqua dark:bg-ligth-blue transition duration-300 ease-in-out
 }
-

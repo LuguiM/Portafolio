@@ -1,5 +1,12 @@
 ---
-const { lang = "es" } = Astro.props;
----
+import { useTranslations } from "@i18n/utils";
 
-{lang === "es" ? <a href="/en/">EN</a> : <a href="/es/">ES</a>}
+const { lang = "es" } = Astro.props;
+const t = useTranslations(lang);
+
+---
+<div class="tooltip" data-tip={t("nav.language")}>
+    <div class="text-primary dark:text-white">
+        {lang === "es" ? <a href="/en/">EN</a> : <a href="/es/">ES</a>}
+    </div>
+</div>
