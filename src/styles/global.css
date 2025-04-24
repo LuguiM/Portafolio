@@ -6,11 +6,11 @@
     font-style: normal;
 } */
 
-.quantico-bold {
+/* .quantico-bold {
     font-family: "Quantico", sans-serif;
     font-weight: 700;
     font-style: normal;
-}
+} */
 
 html,
 body {
@@ -23,26 +23,33 @@ body {
     height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 @import "tailwindcss";
+
 @plugin "daisyui" {
     themes: false;
-  }
+}
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
 
-    --text-h1: 64px 72px;
-    --text-h2: 56px 64px;
-    --text-h3: 48px 56px;
-    --text-h4: 40px 48px;
-    --text-h5: 32px 40px;
-    --text-h6: 24px 32px;
+    --text-h1: 64px;
+    --text-h2: 56px;
+    --text-h3: 48px;
+    --text-h4: 40px;
+    --text-h5: 32px;
+    --text-h6: 24px;
 
-    --text-bodyLarge: 18px 32px;
-    --text-bodyRegular: 16px 24px;
-    --text-bodySmall: 14px 24px;
-    --text-paragraph: 16px 32px;
+    --text-bodyLarge: 18px;
+    --text-bodyRegular: 16px;
+    --text-bodySmall: 14px;
+    --text-paragraph: 16px;
 
     --color-primary: #215373;
     --color-secondary: #363A4B;
@@ -61,7 +68,7 @@ body {
 }
 
 .body-bg {
-    @apply bg-white text-primary dark:bg-black dark:text-white;
+    @apply bg-white text-secondary dark:bg-black dark:text-white;
 }
 
 /* tooltips */
@@ -71,11 +78,11 @@ body {
 
 /* buttons */
 .base-button {
-    @apply flex gap-1 rounded-lg px-4 py-2
+    @apply flex justify-between items-center gap-1 rounded-lg px-4 py-2
 }
 
 .base-button.outlined {
-    @apply border-2 border-primary dark:border-aqua text-primary dark:text-white
+    @apply border-1 border-primary dark:border-aqua text-primary dark:text-white
 }
 
 .base-button.filled {

@@ -1,0 +1,39 @@
+---
+import SocialBtns from "./parts/socialBtns.astro";
+import ProfilePhoto from "@assets/profile-photo.png";
+
+import { useTranslations } from "@i18n/utils";
+
+const { lang = "es" } = Astro.props;
+
+const t = useTranslations(lang);
+---
+
+<div class="flex justify-between my-20">
+    <div class="flex flex-col gap-0">
+        <p class="text-bodyLarge">{t("home.welcome")}</p>
+        <div class="text-primary dark:text-ligth-blue">
+            <h1 class="!text-h1">{t("home.name")}</h1>
+            <h4 class="text-h4">{t("home.webPositon")}</h4>
+        </div>
+        <div class="flex gap-4 mt-3">
+            <SocialBtns name={t("home.linkedIn")} />
+            <SocialBtns name={t("home.github")} />
+        </div>
+    </div>
+
+    <div class="relative w-fit">
+        <img
+          src={ProfilePhoto.src}
+          alt="Foto de perfil"
+          class="rounded-lg shadow-2xs w-[266px] h-[247px] object-cover"
+        />
+        <div class="absolute -bottom-3 -left-28 w-fit shadow-2xl bg-primary rounded-lg p-2 text-white text-bodyRegular">
+          <p>2+</p>
+          <p>{t("home.experience")}</p>
+        </div>
+      </div>
+      
+</div>
+
+<style></style>

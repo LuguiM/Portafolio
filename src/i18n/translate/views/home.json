@@ -1,0 +1,17 @@
+{
+    "esHome": {
+        "home.welcome": "¡Bienvenidos! Yo soy",
+        "home.name": "Luis Muñoz",
+        "home.webPositon": "Desarrollador Web",
+        "home.uiPosition": "Desarrollador UI",
+        "home.experience": "Años de experiencia",
+        "home.linkedIn": "LinkedIn",
+        "home.github": "GitHub"
+    },
+    "enHome": {
+        "home.welcome": "Welcome! I am",
+        "home.webPositon": "Web Developer",
+        "home.uiPosition": "UI Developer",
+        "home.experience": "Years of experience"
+    }
+}

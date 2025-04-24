@@ -1,10 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import Home from '@views/home/index.astro';
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
 
 export async function getStaticPaths() {
   return [
@@ -15,5 +14,5 @@ export async function getStaticPaths() {
 ---
 
 <Layout>
-    <p>{t('nav.cv')}</p>  
+    <Home lang={lang} />
 </Layout>

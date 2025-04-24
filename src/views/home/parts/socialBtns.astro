@@ -1,0 +1,33 @@
+---
+import Button from "@components/button.astro";
+import linkedInIcon from "@assets/icons-social/linkedin.svg";
+import githubIcon from "@assets/icons-social/github.svg";
+import githubDarkIcon from "@assets/icons-social/github-dark.svg";
+
+const { name } = Astro.props;
+---
+
+{
+    name === "LinkedIn" && (
+        <Button linkButton href="/" outline={true} class="!text-h4 capitalize">
+            <img src={linkedInIcon.src} alt={name} />
+            {name}
+        </Button>
+    )
+}
+
+{
+    name === "GitHub" && (
+        <Button linkButton href="/" outline={true} class="!text-h4 capitalize">
+            <span class="dark:hidden">
+                <img src={githubIcon.src} alt={name} />
+            </span>
+            <span class="hidden dark:inline">
+                <img src={githubDarkIcon.src} alt={name} />
+            </span>
+            {name}
+        </Button>
+    )
+}
+
+<style></style>
