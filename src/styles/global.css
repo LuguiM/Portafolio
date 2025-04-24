@@ -26,6 +26,19 @@ html, body {
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+
+    --text-h1: 64px 72px;
+    --text-h2: 56px 64px;
+    --text-h3: 48px 56px;
+    --text-h4: 40px 48px;
+    --text-h5: 32px 40px;
+    --text-h6: 24px 32px;
+
+    --text-bodyLarge: 18px 32px;
+    --text-bodyRegular: 16px 24px;
+    --text-bodySmall: 14px 24px;
+    --text-paragraph: 16px 32px;
+
     --color-primary: #215373;
     --color-secondary: #363A4B;
     --color-white: #efefef;
