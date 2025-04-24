@@ -1,14 +1,25 @@
 ---
 import "../styles/global.css";
-import Navbar from "../components/ui/Navbar.astro";
+import Navbar from "./components/Navbar.astro";
 import { getLangFromUrl } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={lang} class="dark">
 	<head>
+		<script>
+			if (
+				localStorage.theme === "dark" ||
+				(!("theme" in localStorage) &&
+					window.matchMedia("(prefers-color-scheme: dark)").matches)
+			) {
+				document.documentElement.classList.add("dark");
+			} else {
+				document.documentElement.classList.remove("dark");
+			}
+		</script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -17,7 +28,7 @@ const lang = getLangFromUrl(Astro.url);
 
 		<title>Portafolio</title>
 	</head>
-	<body>
+	<body class="body-bg">
 		<Navbar lang={lang} />
 		<main>
 			<slot />

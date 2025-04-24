@@ -3,7 +3,7 @@
         "nav.home": "Inicio",
         "nav.experience": "Experiencia",
         "nav.technologies": "Tecnologías",
-        "nav.projects": "Servicios",
+        "nav.projects": "Proyectos",
         "nav.contact": "Contacto",
         "nav.portfolio": "Portafolio",
         "nav.cv": "CV"
@@ -12,7 +12,7 @@
         "nav.home": "Home",
         "nav.experience": "Experience",
         "nav.technologies": "Technologies",
-        "nav.projects": "Services",
+        "nav.projects": "Proyectos",
         "nav.contact": "Contact",
         "nav.portfolio": "Portfolio"
     }

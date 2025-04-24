@@ -23,6 +23,7 @@ html, body {
 }
 
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
     --color-primary: #215373;
@@ -36,5 +37,24 @@ html, body {
 }
 
 .nav-container {
-    @apply rounded-lg text-primary p-5 mx-10 border border-secondary;
+    @apply flex items-center justify-center gap-x-8 rounded-lg p-5 border border-secondary dark:border-aqua;
 }
+
+.body-bg {
+    @apply bg-white text-primary dark:bg-black dark:text-white;
+}
+
+
+/* buttons */
+.base-button {
+    @apply flex gap-1 rounded-lg px-4 py-2
+}
+
+.base-button.outlined {
+    @apply border-2 border-primary dark:border-aqua text-primary dark:text-white
+}
+
+.base-button.filled {
+    @apply bg-primary dark:bg-aqua text-white hover:bg-aqua dark:bg-ligth-blue transition duration-300 ease-in-out
+}
+

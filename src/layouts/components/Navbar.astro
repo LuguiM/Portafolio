@@ -1,0 +1,45 @@
+---
+import SwitchTheme from "./switchTheme.astro";
+import SwitchLenguage from "./switchLenguage.astro";
+import Icon from "../../components/icon.astro";
+import Button from "../../components/button.astro";
+import { useTranslations } from "../../i18n/utils";
+import { fade } from "astro:transitions";
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const navOptions = [
+    { name: t("nav.home"), path: "#home" },
+    { name: t("nav.experience"), path: "#experience" },
+    { name: t("nav.technologies"), path: "#technologies" },
+    { name: t("nav.projects"), path: "#projects" },
+    { name: t("nav.contact"), path: "#contact" },
+];
+---
+
+<nav class="flex justify-center">
+    <div class="nav-container">
+        <ul class="flex gap-8">
+            {
+                navOptions.map((option) => (
+                    <li>
+                        <a href={option.path} class="text-[16px]/[32px]">
+                            {option.name}
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+        <div class="flex items-center align-middle gap-x-5">
+            <SwitchTheme />
+            <SwitchLenguage lang={lang} />
+
+            <Button linkButton={true} href="/cv.pdf" outlined={false}>
+                <Icon icon="file" className="inline" />
+                {t("nav.cv")}
+            </Button>
+        </div>
+    </div>
+</nav>
+<style></style>
