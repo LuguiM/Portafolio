@@ -1,6 +1,6 @@
 ---
-import SwitchTheme from "./switchTheme.astro";
-import SwitchLenguage from "./switchLenguage.astro";
+import SwitchTheme from "../components/switchTheme.astro";
+import SwitchLenguage from "../components/switchLenguage.astro";
 import Icon from "@components/icon.astro";
 import Button from "@components/button.astro";
 import { useTranslations } from "@i18n/utils";
@@ -31,7 +31,7 @@ const navOptions = [
             }
         </ul>
         <div class="flex items-center align-middle gap-x-5">
-            <SwitchTheme lang={lang} />
+            <SwitchTheme />
             <SwitchLenguage lang={lang} />
 
             <Button linkButton={true} href="/cv.pdf" outlined={false}>

@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
-import Navbar from "./components/Navbar.astro";
+import Navbar from "./Parts/Navbar.astro";
+import Footer from "./Parts/Footer.astro"
 import { getLangFromUrl } from "@i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -33,5 +34,6 @@ const lang = getLangFromUrl(Astro.url);
 		<main>
 			<slot />
 		</main>
+		<Footer />
 	</body>
 </html>
