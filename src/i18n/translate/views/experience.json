@@ -1,0 +1,35 @@
+{
+    "esExperience": {
+        "experience.workExperience": "Experiencia laboral",
+
+        "experience.experience1.title": "Pasante de desarrollo",
+        "experience.experience1.company": "Secretaría de Innovación",
+        "experience.experience1.date": "Julio 2023 - Diciembre 2023",
+        "experience.experience1.description": "Pasante en el programa de Pasantias Especializadas en Habilidades digitales utilizando VueJs y Laravel.",
+        
+        "experience.experience2.title": "Pasante Desarrollador Web",
+        "experience.experience2.company": "Iconova Consulting Group",
+        "experience.experience2.date": "Junio 2024 - Diciembre 2024",
+        "experience.experience2.description": "Desarrollador Web en el área de desarrollo de web utilizando Laravel.",
+
+        "experience.experience3.title": "Desarrollador Web",
+        "experience.experience3.company": "Secretaría de Innovación",
+        "experience.experience3.date": "Enero 2024 - Actualidad",
+        "experience.experience3.description": "Desarrollador Web en el área de desarrollo de web apoyando en el area de FrontEnd utilizando VueJs y Laravel"
+    },
+    "enExperience": {
+        "experience.workExperience": "Work experience",
+
+        "experience.experience1.title": "Development Intern",
+        "experience.experience1.date": "July 2023 - December 2023",
+        "experience.experience1.description": "Intern in the Specialized Internship program in digital skills using VueJs and Laravel.",
+
+        "experience.experience2.title": "Web Developer Intern",
+        "experience.experience2.date": "June 2024 - December 2024",
+        "experience.experience2.description": "Web Developer in the web development area using Laravel.",
+
+        "experience.experience3.title": "Web Developer",
+        "experience.experience3.date": "January 2024 - Present",
+        "experience.experience3.description": "Web Developer in the web development area supporting the FrontEnd area using VueJs and Laravel."
+    }
+}

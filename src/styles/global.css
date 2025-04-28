@@ -53,9 +53,10 @@ h1, h2, h3, h4, h5, h6 {
 
     --color-primary: #215373;
     --color-secondary: #363A4B;
+    /* aqua */
     --color-accent: #369294;
     --color-white: #efefef;
-    --color-grey: #D9D9D9;
+    --color-gray: #D9D9D9;
     --color-ligth-blue: #51ABAD;
     --color-black: #2D2D2D;
     --color-black-2: #353535;
@@ -69,6 +70,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .body-bg {
     @apply bg-white text-secondary dark:bg-black dark:text-white;
+}
+
+.section-spacing {
+    @apply my-20
 }
 
 /* tooltips */
