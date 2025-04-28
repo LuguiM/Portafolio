@@ -7,6 +7,15 @@ import { useTranslations } from "@i18n/utils";
 const { lang = "es" } = Astro.props;
 
 const t = useTranslations(lang);
+
+const timeCount = () => {
+  const fechaInicio = new Date("2023-07-01").getTime();
+  const fechaActual = new Date().getTime();
+  const diffTime = Math.abs(fechaActual - fechaInicio);
+  console.log(diffTime);
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24 *365.25));
+  return diffDays;
+}
 ---
 
 <div class="flex justify-between my-20">
@@ -29,7 +38,7 @@ const t = useTranslations(lang);
           class="rounded-lg shadow-2xs w-[266px] h-[247px] object-cover"
         />
         <div class="absolute -bottom-3 -left-28 w-fit shadow-2xl bg-primary rounded-lg p-2 text-white text-bodyRegular">
-          <p>2+</p>
+          <p>+{timeCount()}</p>
           <p>{t("home.experience")}</p>
         </div>
       </div>
