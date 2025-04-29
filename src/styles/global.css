@@ -73,6 +73,11 @@ h6 {
     @apply flex items-center justify-center gap-x-8 rounded-lg p-5 border border-secondary dark:border-aqua;
 }
 
+/* Mostrar menú cuando está abierto en móvil */
+input#menu-toggle:checked~ul {
+    @apply flex;
+}
+
 .body-bg {
     @apply bg-white text-secondary dark:bg-black dark:text-white;
 }
@@ -101,5 +106,5 @@ h6 {
 
 /* tech */
 .tech-card-container {
-    @apply flex items-center justify-center mt-4 w-[100px] h-[100px] rounded-lg border border-primary dark:border-accent dark:bg-white hover:shadow-2xl shadow-accent transition duration-300 ease-in-out
+    @apply flex items-center justify-center mt-4 w-[100px] h-[100px] rounded-lg border border-primary dark:border-accent dark:bg-gray hover:shadow-2xl shadow-accent transition duration-300 ease-in-out
 }
