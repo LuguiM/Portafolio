@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Home from '@views/home/index.astro';
 import Experience from '@views/experience/index.astro'; 
 import Technologies from '@views/technologies/index.astro';
+import Projects from '@views/projects/index.astro';
 import { getLangFromUrl } from '@i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
@@ -19,4 +20,5 @@ export async function getStaticPaths() {
     <Home lang={lang} />
     <Experience />
     <Technologies />
+    <Projects />
 </Layout>

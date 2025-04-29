@@ -2,6 +2,7 @@ import { en as navEn, es as navEs} from './translate/nav.json'
 import { enHome, esHome} from './translate/views/home.json'
 import { enExperience, esExperience} from './translate/views/experience.json'
 import { enTech, esTech } from './translate/views/tech.json'
+import { enProjects, esProjects } from './translate/views/projects.json'
 
 export const languages = {
     en: 'English',
@@ -14,12 +15,14 @@ export const ui = {
         ...navEs,
         ...esHome,
         ...esExperience,
-        ...esTech
+        ...esTech,
+        ...esProjects
     },
     en: {
         ...navEn,
         ...enHome,
         ...enExperience,
-        ...enTech
+        ...enTech,
+        ...enProjects
     },
 } as const;

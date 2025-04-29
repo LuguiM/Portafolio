@@ -1,0 +1,12 @@
+{
+    "esProjects": {
+        "Project.title": "Mis proyectos",
+        "Project.webProjects": "Proyectos web",
+        "Project.UIProjects": "Proyectos de UI"
+    },
+    "enProjects": {
+        "Project.title": "My Projects",
+        "Project.webProjects": "Web Projects",
+        "Project.UIProjects": "UI Projects"
+    }
+}

@@ -1,0 +1,29 @@
+---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="section-spacing" id="technologies">
+    <h4 class="text-h4 text-primary dark:text-accent">{t("Project.title")}</h4>
+
+    <div class="tabs tabs-border">
+        <input
+            type="radio"
+            name="my_tabs"
+            class="tab"
+            aria-label={t("Project.webProjects")}
+            checked="checked"
+        />
+        <div class="tab-content bg-base-100 p-10">
+            Tab content 1
+        </div>
+
+        <input type="radio" name="my_tabs" class="tab" aria-label={t("Project.UIProjects")} />
+        <div class="tab-content bg-base-100 p-10">Tab content 2</div>
+    </div>
+
+</div>
+
+<style></style>
