@@ -9,7 +9,7 @@ const { name } = Astro.props;
 
 {
     name === "LinkedIn" && (
-        <Button linkButton href="/" outline={true} class="!text-h4 capitalize">
+        <Button linkButton href="/" outline={true} className="!text-Regular capitalize">
             <img src={linkedInIcon.src} alt={name} />
             {name}
         </Button>
@@ -18,7 +18,7 @@ const { name } = Astro.props;
 
 {
     name === "GitHub" && (
-        <Button linkButton href="/" outline={true} class="!text-h4 capitalize">
+        <Button linkButton href="/" outline={true} className="!text-Regular capitalize">
             <span class="dark:hidden">
                 <img src={githubIcon.src} alt={name} />
             </span>

@@ -8,7 +8,8 @@ const imgSrc = img || "https://fakeimg.pl/600x400?text=img";
 ---
 
 <div
-    class="card w-fit h-[364px] flex flex-col justify-between border-2 border-primary dark:border-ligth-blue rounded-lg p-4"
+    class="card w-fit h-[364px] flex flex-col justify-between border-2
+border-primary dark:border-ligth-blue rounded-lg p-4"
 >
     <Image
         src={imgSrc}
@@ -31,22 +32,19 @@ const imgSrc = img || "https://fakeimg.pl/600x400?text=img";
             </span>
         </button>
     </div>
-    <div class="cardDescription gap-2 w-[332px] hidden animate-flip-up">
+    <div class="cardDescription gap-2 w-[332px] hidden animate-flip-up text-sm text-gray-500 dark:text-white">
         <slot name="description">
             <p class="text-sm text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam voluptatibus, cumque, quibusdam, voluptates quisquam
-                voluptatibus cumque quibusdam voluptates quisquam voluptatibus
-                cumque quibusdam.
+                Project description goes here.
             </p>
         </slot>
     </div>
     <div class="flex gap-2">
-        <slot name="techs" />
+        <slot name="techs"  />
+
     </div>
-    <div>
-        <slot name="links" />
-    </div>
+
+    <slot name="links" />
 </div>
 
 <script>

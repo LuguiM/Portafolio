@@ -1,22 +1,22 @@
 ---
-const { linkButton = true, href, outlined = true, className } = Astro.props;
+const {
+    linkButton = true,
+    href,
+    outlined = true,
+    disabled,
+    className = "",
+} = Astro.props;
 
 const outlinedClass = outlined ? "outlined" : "filled";
-
 ---
 
 {
     linkButton ? (
-        <a
-            href={href}
-            class={`base-button ${outlinedClass} ${className}`}
-        >
+        <a href={href} class={`base-button ${outlinedClass} ${className}`}>
             <slot />
         </a>
     ) : (
-        <button
-            class={`base-button ${outlinedClass} ${className}`}
-        >
+        <button class={`base-button ${outlinedClass} ${className}`}>
             <slot />
         </button>
     )
