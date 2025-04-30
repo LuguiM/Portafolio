@@ -1,0 +1,75 @@
+---
+import Button from "@components/button.astro";
+import Icon from "@components/icon.astro";
+import { Image } from "astro:assets";
+import githubIcon from "@assets/icons-social/github.svg";
+import githubDarkIcon from "@assets/icons-social/github-dark.svg";
+import figmaIcon from "@assets/icons-social/figma.svg";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const { gitHub = "", figma = "", link = "" } = Astro.props;
+
+const links = [
+    {
+        url: gitHub,
+        label: t("Project.seeGithub"),
+        icon: {
+            light: githubIcon,
+            dark: githubDarkIcon,
+        },
+    },
+    { url: figma, label: t("Project.seeFigma"), icon: figmaIcon },
+    { url: link, label: t("Project.seeProject") },
+];
+---
+
+{
+    links.map(({ url, label, icon }) =>
+        url ? (
+            <Button
+                linkButton
+                href={url}
+                outlined
+                className="!text-bodyRegular capitalize flex items-center gap-2"
+            >
+                {typeof icon === "object" ? (
+                    <>
+                        <span class="dark:hidden">
+                            <Image
+                                src={icon.light}
+                                alt={`${label} icon`}
+                                width={16}
+                                height={16}
+                                class="w-4 h-4"
+                            />
+                        </span>
+                        <span class="hidden dark:inline">
+                            <Image
+                                src={icon.dark}
+                                alt={`${label} dark icon`}
+                                width={16}
+                                height={16}
+                                class="w-4 h-4"
+                            />
+                        </span>
+                    </>
+                ) : icon ? (
+                    <Image
+                        src={icon}
+                        alt={`${label} icon`}
+                        width={16}
+                        height={16}
+                        class="w-[16px] h-[16px]"
+                    />
+                ) : (
+                    // <img src={icon} alt={`${label} icon`} class="" />
+                    <Icon icon="window-alt" class="w-4 h-4" />
+                )}
+                {label}
+            </Button>
+        ) : null,
+    )
+}

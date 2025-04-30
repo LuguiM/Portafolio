@@ -2,11 +2,17 @@
     "esProjects": {
         "Project.title": "Mis proyectos",
         "Project.webProjects": "Proyectos web",
-        "Project.UIProjects": "Proyectos de UI"
+        "Project.UIProjects": "Proyectos de UI",
+        "Project.seeProject" : "Ver proyecto",
+        "Project.seeGithub": "Ver respositorio",
+        "Project.seeFigma": "Ver diseño"
     },
     "enProjects": {
         "Project.title": "My Projects",
         "Project.webProjects": "Web Projects",
-        "Project.UIProjects": "UI Projects"
+        "Project.UIProjects": "UI Projects",
+        "Project.seeProject" : "See project",
+        "Project.seeGithub": "See repository",
+        "Project.seeFigma": "See design"
     }
 }

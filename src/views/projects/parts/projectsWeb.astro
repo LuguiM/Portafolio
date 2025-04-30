@@ -1,0 +1,39 @@
+---
+import Card from "@components/card.astro";
+import Tech from "@components/tech.astro";
+import Buttons from "../components/Buttons.astro";
+import { getLangFromUrl, getCollection } from "@i18n/utils";
+import worldRanks from "@assets/projects/worldRanks.png";
+import frontStore from "@assets/projects/frontStore.png";
+
+const lang = getLangFromUrl(Astro.url);
+
+const projects = getCollection(lang, "projects.");
+const imageMap = {
+    worldRanks: worldRanks,
+    frontStore: frontStore,
+    // "other-key": otherImage,
+};
+---
+
+<div class="flex flex-wrap gap-14 justify-center mt-4">
+    {
+        projects.map((project) => (
+            <Card title={project.title} img={imageMap[project.key]}>
+                <p slot="description">{project.description}</p>
+
+                {Array.isArray(project.tech) &&
+                    project.tech.map((item) => (
+                        <Tech type={item} slot="techs" />
+                    ))}
+
+                <div slot="links" class="flex justify-around gap-2">
+                    <Buttons gitHub={project?.github} />
+                    <Buttons link={project.link} />
+                </div>
+            </Card>
+        ))
+    }
+</div>
+
+<style></style>

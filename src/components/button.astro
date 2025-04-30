@@ -12,7 +12,7 @@ const outlinedClass = outlined ? "outlined" : "filled";
 
 {
     linkButton ? (
-        <a href={href} class={`base-button ${outlinedClass} ${className}`}>
+        <a href={href} target="_blank" class={`base-button ${outlinedClass} ${className}`}>
             <slot />
         </a>
     ) : (
