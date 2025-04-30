@@ -1,5 +1,6 @@
 ---
-
+const linkedin = import.meta.env.LINK_LINKEDIN;
+const github = import.meta.env.LINK_GITHUB;
 ---
 
 <footer
@@ -15,10 +16,10 @@
     <nav
         class="grid-flow-col gap-4 md:place-self-center md:justify-self-end text-bodyLarge"
     >
-        <a href="">
+        <a href={github} target="_blank">
             GitHub
         </a>
-        <a href="">
+        <a href={linkedin} target="_blank">
             LinkedIn
         </a>
     </nav>
