@@ -1,6 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
-
+import { defineConfig, envField } from "astro/config"
 import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
@@ -15,6 +14,14 @@ export default defineConfig({
     locales: ["es", "en"],
     routing: {
       prefixDefaultLocale: true
+    }
+  },
+  experimental: {
+    env: {
+      schema: {
+        LINK_LINKEDIN: envField.string({ context: "client", access: "public", default: "https://www.linkedin.com/in/jose-luis-muñoz-padilla-92642133b" }),
+        LINK_GITHUB : envField.string({ context: "client", access: "public", default: "https://github.com/LuguiM" }),
+      }
     }
   }
 });
