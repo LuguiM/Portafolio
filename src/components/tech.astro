@@ -1,0 +1,45 @@
+---
+import jsIcon from "@assets/icons-tech/js.svg";
+import vueIcon from "@assets/icons-tech/vue.svg";
+import reactIcon from "@assets/icons-tech/react.svg";
+import astroIcon from "@assets/icons-tech/astro.svg";
+import laravelIcon from "@assets/icons-tech/laravel.svg";
+import vuetifyIcon from "@assets/icons-tech/vuetify.svg";
+import primevueIcon from "@assets/icons-tech/primevue.svg";
+import bootstrapIcon from "@assets/icons-tech/bootstrap.svg";
+import tailwindIcon from "@assets/icons-tech/tailwind.svg";
+import figmaIcon from "@assets/icons-tech/figma.svg";
+
+import { Image } from "astro:assets";
+
+const techs = [
+    { type: "vue", label: "VueJs", icon: vueIcon },
+    { type: "js", label: "Javascript", icon: jsIcon },
+    { type: "react", label: "React", icon: reactIcon },
+    { type: "astro", label: "Astro", icon: astroIcon },
+    { type: "laravel", label: "Laravel", icon: laravelIcon },
+    { type: "vuetify", label: "Vuetify", icon: vuetifyIcon },
+    { type: "primevue", label: "PrimeVue", icon: primevueIcon },
+    { type: "bootstrap", label: "Bootstrap", icon: bootstrapIcon },
+    { type: "tailwind", label: "Tailwind", icon: tailwindIcon },
+    { type: "figma", label: "Figma", icon: figmaIcon },
+];
+const { type } = Astro.props;
+
+const tech = techs.find((tech) => tech.type === type);
+---
+
+<div
+    class="w-fit p-1 flex gap-1 border border-primary rounded-md dark:border-ligth-blue text-primary dark:text-white"
+>   
+    <p class="text-[10px]">{tech?.label}</p>
+    <Image
+        src={tech?.icon || "https://fakeimg.pl/15x15?text=img"}
+        alt={tech?.label || "Tech icon"}
+        width={15}
+        height={14}
+        class="w-[15px] h-[14px]"
+    />
+</div>
+
+<style></style>
