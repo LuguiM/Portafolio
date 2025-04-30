@@ -20,14 +20,14 @@ const imageMap = {
     {
         projects.map((project) => (
             <Card title={project.title} img={imageMap[project.key]}>
-                <p slot="description">{project.description}</p>
+                <p slot="description" class="text-wrap">{project.description}</p>
 
                 {Array.isArray(project.tech) &&
                     project.tech.map((item) => (
                         <Tech type={item} slot="techs" />
                     ))}
 
-                <div slot="links" class="flex justify-around gap-2">
+                <div slot="links" class="flex flex-col md:flex-row justify-around gap-2">
                     <Buttons gitHub={project?.github} />
                     <Buttons link={project.link} />
                 </div>

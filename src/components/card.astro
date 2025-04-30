@@ -8,7 +8,7 @@ const imgSrc = img || "https://fakeimg.pl/600x400?text=img";
 ---
 
 <div
-    class="card hover:shadow-md shadow-accent w-fit h-[364px] flex flex-col justify-between border-2
+    class="card hover:shadow-md shadow-accent w-[270px] md:w-[332px]  h-[364px] flex flex-col gap-3 justify-between border-2
 border-primary dark:border-ligth-blue rounded-lg p-4"
 >
     <Image
@@ -22,7 +22,7 @@ border-primary dark:border-ligth-blue rounded-lg p-4"
     <div class="cardTitle flex justify-between">
         <h6 class="text-h6 text-primary dark:text-ligth-blue">{title}</h6>
         <button
-            class="border-2 rounded-full px-1 hover:bg-gray transition-colors duration-300 cursor-pointer FlipCardBtn"
+            class="border-2 rounded-full px-1 hover:bg-gray dark:hover:bg-primary transition-colors duration-300 cursor-pointer FlipCardBtn"
         >
             <span class="iconRight block">
                 <Icon icon="chevrons-right" class="text-white" />
@@ -33,7 +33,7 @@ border-primary dark:border-ligth-blue rounded-lg p-4"
         </button>
     </div>
     <div
-        class="cardDescription gap-2 w-[332px] hidden animate-flip-up text-sm text-gray-500 dark:text-white"
+        class="cardDescription gap-2  hidden animate-flip-up text-sm text-gray-500 dark:text-white"
     >
         <slot name="description">
             <p class="text-sm text-gray-500 dark:text-gray-400">
