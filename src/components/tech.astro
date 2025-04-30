@@ -26,7 +26,7 @@ const techs = [
 ];
 const { type } = Astro.props;
 
-const tech = techs.find((tech) => tech.type === type);
+const tech = techs.find((tech) => (tech.type === type || tech.label === type));
 ---
 
 <div
