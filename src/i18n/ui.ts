@@ -4,6 +4,9 @@ import { enExperience, esExperience} from './translate/views/experience.json'
 import { enTech, esTech } from './translate/views/tech.json'
 import { enProjects, esProjects } from './translate/views/projects.json'
 
+// Data
+import { enDataWeb, esDataWeb } from './translate/data/webProjects.json'
+
 export const languages = {
     en: 'English',
     es: 'Español',
@@ -16,13 +19,15 @@ export const ui = {
         ...esHome,
         ...esExperience,
         ...esTech,
-        ...esProjects
+        ...esProjects,
+        ...esDataWeb
     },
     en: {
         ...navEn,
         ...enHome,
         ...enExperience,
         ...enTech,
-        ...enProjects
+        ...enProjects,
+        ...enDataWeb
     },
 } as const;

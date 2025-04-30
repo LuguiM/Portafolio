@@ -1,0 +1,44 @@
+{
+    "esDataWeb": {
+        "projects.web1.title": "World Ranks",
+        "projects.web1.key": "worldRanks",
+        "projects.web1.description": "Aplicación web que muestra el ranking de los países por diferentes categorías. Utiliza la API de REST Countries y está desarrollada con Vue y Tailwind.",
+        "projects.web1.tech": [
+            "vue",
+            "Tailwind"
+        ],
+        "projects.web1.github": "https://github.com/LuguiM/World-Ranks",
+        "projects.web1.link": "https://luguim.github.io/World-Ranks/#/",
+
+        "projects.web2.title": "FrontStore",
+        "projects.web2.key": "frontStore",
+        "projects.web2.description": "Landing page de una tienda online ficticia. Desarrollada con React y Tailwind.",
+        "projects.web2.tech": [
+            "react",
+            "Tailwind"
+        ],
+        "projects.web2.github": "https://github.com/LuguiM/FrontStore",
+        "projects.web2.link": "https://luguim.github.io/FrontStore/"
+    },
+    "enDataWeb": {
+        "projects.web1.title": "World Ranks",
+        "projects.web1.key": "worldRanks",
+        "projects.web1.description": "Web application that shows the ranking of countries by different categories. It uses the REST Countries API and is developed with Vue and Tailwind.",
+        "projects.web1.tech": [
+            "vue",
+            "Tailwind"
+        ],
+        "projects.web1.github": "https://github.com/LuguiM/World-Ranks",
+        "projects.web1.link": "https://luguim.github.io/World-Ranks/#/",
+
+        "projects.web2.title": "FrontStore",
+        "projects.web2.key": "frontStore",
+        "projects.web2.description": "Landing page of a fictitious online store. Developed with React and Tailwind.",
+        "projects.web2.tech": [
+            "react",
+            "Tailwind"
+        ],
+        "projects.web2.github": "https://github.com/LuguiM/FrontStore",
+        "projects.web2.link": "https://front-store-lugui.vercel.app/"
+    }
+}
