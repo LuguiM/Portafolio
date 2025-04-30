@@ -1,0 +1,77 @@
+---
+import Image from "astro/components/Image.astro";
+import Icon from "./icon.astro";
+
+const { img, title = "ProjectName" } = Astro.props;
+
+const imgSrc = img || "https://fakeimg.pl/600x400?text=img";
+---
+
+<div
+    class="card w-fit h-[364px] flex flex-col justify-between border-2 border-primary dark:border-ligth-blue rounded-lg p-4"
+>
+    <Image
+        src={imgSrc}
+        alt="Astro Portfolio"
+        width={332}
+        height={170}
+        class="imgCard w-[332px] h-[170px] rounded-md animate-flip-down"
+        loading={"lazy"}
+    />
+    <div class="cardTitle flex justify-between">
+        <h6 class="text-h6">{title}</h6>
+        <button
+            class="border-2 rounded-full px-1 hover:bg-gray transition-colors duration-300 cursor-pointer FlipCardBtn"
+        >
+            <span class="iconRight block">
+                <Icon icon="chevrons-right" class="text-white" />
+            </span>
+            <span class="iconLeft hidden">
+                <Icon icon="chevrons-left" class="text-white" />
+            </span>
+        </button>
+    </div>
+    <div class="cardDescription gap-2 w-[332px] hidden animate-flip-up">
+        <slot name="description">
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptatibus, cumque, quibusdam, voluptates quisquam
+                voluptatibus cumque quibusdam voluptates quisquam voluptatibus
+                cumque quibusdam.
+            </p>
+        </slot>
+    </div>
+    <div class="flex gap-2">
+        <slot name="techs" />
+    </div>
+    <div>
+        <slot name="links" />
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".card");
+
+        cards.forEach((card) => {
+            const img = card.querySelector(".imgCard");
+            const iconRight = card.querySelector(".iconRight");
+            const iconLeft = card.querySelector(".iconLeft");
+            const toggleBtn = card.querySelector(".FlipCardBtn");
+            const title = card.querySelector(".cardTitle");
+            const desc = card.querySelector(".cardDescription");
+
+            toggleBtn?.addEventListener("click", () => {
+                title?.classList.toggle("animate-fade");
+                img?.classList.toggle("hidden");
+                iconRight?.classList.toggle("hidden");
+                iconLeft?.classList.toggle("hidden");
+                title?.classList.toggle("flex-row-reverse");
+                desc?.classList.toggle("hidden");
+                desc?.classList.toggle("flex");
+            });
+        });
+    });
+</script>
+
+<style></style>
