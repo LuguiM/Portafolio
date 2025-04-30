@@ -9,44 +9,56 @@ const { lang } = Astro.props;
 const t = useTranslations(lang);
 
 const navOptions = [
-    { name: t("nav.home"), path: "#home" },
-    { name: t("nav.experience"), path: "#experience" },
-    { name: t("nav.technologies"), path: "#technologies" },
-    { name: t("nav.projects"), path: "#projects" },
-    { name: t("nav.contact"), path: "#contact" },
+  { name: t("nav.home"), path: "#home" },
+  { name: t("nav.experience"), path: "#experience" },
+  { name: t("nav.technologies"), path: "#technologies" },
+  { name: t("nav.projects"), path: "#projects" },
+  { name: t("nav.contact"), path: "#contact" },
 ];
 ---
 
-<nav class="sticky top-0 z-50 w-fit mx-auto bg-white/70 dark:bg-gray-900/50 backdrop-blur-lg ">
-    <div class="nav-container relative flex-col md:flex-row">
-      <!-- Botón hamburguesa solo visible en móvil -->
-      <input type="checkbox" id="menu-toggle" class="hidden peer" />
-      <label for="menu-toggle" class="md:hidden absolute right-4 top-4 cursor-pointer p-2 z-20">
-        <Icon icon="menu" class="w-6 h-6 text-primary dark:text-aqua peer-checked:hidden" />
-        <!-- <Icon icon="x" class="w-6 h-6 text-primary dark:text-aqua hidden peer-checked:block" /> -->
-      </label>
-  
-      <!-- Menú de navegación -->
-      <ul class="hidden peer-checked:flex flex-col md:flex md:flex-row items-center gap-6 md:gap-8 mt-8 md:mt-0 z-10">
-        {navOptions.map((option) => (
+<nav
+  class="sticky rounded-lg top-0 z-50 md:w-fit mx-auto bg-white/70 dark:bg-gray-900/50 backdrop-blur-lg"
+>
+  <div class="nav-container relative flex-col md:flex-row">
+    <!-- Botón hamburguesa solo visible en móvil -->
+    <input type="checkbox" id="menu-toggle" class="hidden peer" />
+    <label
+      for="menu-toggle"
+      class="md:hidden absolute right-4 top-4 cursor-pointer p-2 z-20"
+    >
+      <Icon
+        icon="menu"
+        class="w-6 h-6 text-primary dark:text-aqua peer-checked:hidden"
+      />
+      <!-- <Icon icon="x" class="w-6 h-6 text-primary dark:text-aqua hidden peer-checked:block" /> -->
+    </label>
+
+    <!-- Menú de navegación -->
+    <ul
+      class="hidden peer-checked:flex flex-col md:flex md:flex-row items-center gap-6 md:gap-8 mt-8 md:mt-0 z-10"
+    >
+      {
+        navOptions.map((option) => (
           <li>
             <a href={option.path} class="text-paragraph hover:underline block">
               {option.name}
             </a>
           </li>
-        ))}
-      </ul>
-  
-      <!-- Botones de idioma, tema y CV -->
-      <div class="flex gap-4 items-center mt-10 md:mt-0">
-        <SwitchTheme />
-        <SwitchLenguage lang={lang} />
-        <Button linkButton={true} href="/cv.pdf" outlined={false}>
-          <Icon icon="file" class="inline" />
-          {t("nav.cv")}
-        </Button>
-      </div>
+        ))
+      }
+    </ul>
+
+    <!-- Botones de idioma, tema y CV -->
+    <div class="flex gap-4 items-center  md:mt-0">
+      <SwitchTheme />
+      <SwitchLenguage lang={lang} />
+      <Button linkButton={true} href="/cv.pdf" outlined={false}>
+        <Icon icon="file" class="inline" />
+        {t("nav.cv")}
+      </Button>
     </div>
-  </nav>
+  </div>
+</nav>
 
 <style></style>
