@@ -16,12 +16,12 @@ export default defineConfig({
       prefixDefaultLocale: true
     }
   },
-  experimental: {
-    env: {
-      schema: {
-        LINK_LINKEDIN: envField.string({ context: "client", access: "public", default: "https://www.linkedin.com/in/jose-luis-muñoz-padilla-92642133b" }),
-        LINK_GITHUB : envField.string({ context: "client", access: "public", default: "https://github.com/LuguiM" }),
-      }
-    }
-  }
+  // experimental: {
+  //   env: {
+  //     schema: {
+  //       LINK_LINKEDIN: envField.string({ context: "client", access: "public", default: "https://www.linkedin.com/in/jose-luis-muñoz-padilla-92642133b" }),
+  //       LINK_GITHUB : envField.string({ context: "client", access: "public", default: "https://github.com/LuguiM" }),
+  //     }
+  //   }
+  // }
 });

@@ -3,12 +3,13 @@ const {
     icon = "question_mark",
     className = "",
     color = "#FFFFFf",
+    size = "",
 } = Astro.props;
 ---
 
 <!-- <box-icon name={icon} class={className + ``} color={color}></box-icon> -->
 <span class=`!text-[${color}] ${className} m-0 p-0`>
-    <i class=`bx bx-${icon} bx-sm`></i>
+    <i class=`bx bx-${icon} bx-${size}`></i>
 </span>
 
 <link

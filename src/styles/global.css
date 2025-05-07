@@ -92,7 +92,7 @@ input#menu-toggle:checked~ul {
 
 /* buttons */
 .base-button {
-    @apply flex justify-between items-center gap-1 rounded-lg px-4 py-2
+    @apply flex justify-center items-center gap-1 rounded-lg px-4 py-2
 }
 
 .base-button.outlined {
