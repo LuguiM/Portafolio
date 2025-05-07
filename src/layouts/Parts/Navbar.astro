@@ -37,7 +37,7 @@ const navOptions = [
 
     <!-- Menú de navegación -->
     <ul
-      class="hidden peer-checked:flex flex-col md:flex md:flex-row items-center gap-6 md:gap-8 mt-8 md:mt-0 z-10"
+      class="hidden peer-checked:flex flex-col md:flex md:flex-row items-center gap-6 md:gap-8 mb-4 md:mb-0 md:mt-0 z-10"
     >
       {
         navOptions.map((option) => (
@@ -51,7 +51,7 @@ const navOptions = [
     </ul>
 
     <!-- Botones de idioma, tema y CV -->
-    <div class="flex gap-4 items-center  md:mt-0">
+    <div class="flex gap-4 items-center md:mt-0">
       <SwitchTheme />
       <SwitchLenguage lang={lang} />
       <Button linkButton={true} href="/cv.pdf" outlined={false}>
