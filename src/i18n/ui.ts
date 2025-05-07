@@ -3,7 +3,7 @@ import { enHome, esHome} from './translate/views/home.json'
 import { enExperience, esExperience} from './translate/views/experience.json'
 import { enTech, esTech } from './translate/views/tech.json'
 import { enProjects, esProjects } from './translate/views/projects.json'
-
+import { enHeadTags, esHeadTags } from './translate/headTags.json'
 // Data
 import { enDataWeb, esDataWeb } from './translate/data/webProjects.json'
 
@@ -16,6 +16,7 @@ export const defaultLang = 'es';
 export const ui = {
     es: {
         ...navEs,
+        ...esHeadTags,
         ...esHome,
         ...esExperience,
         ...esTech,
@@ -24,6 +25,7 @@ export const ui = {
     },
     en: {
         ...navEn,
+        ...enHeadTags,
         ...enHome,
         ...enExperience,
         ...enTech,
