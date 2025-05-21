@@ -5,6 +5,7 @@ import Buttons from "../components/Buttons.astro";
 import { getLangFromUrl, getCollection } from "@i18n/utils";
 import worldRanks from "@assets/projects/worldRanks.png";
 import frontStore from "@assets/projects/frontStore.png";
+import browserExtensionManagerUI from "@assets/projects/browserExtensionManagerUI.png";
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -12,6 +13,7 @@ const projects = getCollection(lang, "projects.");
 const imageMap = {
     worldRanks: worldRanks,
     frontStore: frontStore,
+    browserExtensionManagerUI: browserExtensionManagerUI,
     // "other-key": otherImage,
 };
 ---
