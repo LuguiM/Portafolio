@@ -18,7 +18,18 @@
             "Tailwind"
         ],
         "projects.web2.github": "https://github.com/LuguiM/FrontStore",
-        "projects.web2.link": "https://luguim.github.io/FrontStore/"
+        "projects.web2.link": "https://luguim.github.io/FrontStore/",
+
+        "projects.web3.title": "Browser Extension Manager UI",
+        "projects.web3.key": "browserExtensionManagerUI",
+        "projects.web3.description": "Interfaz de usuario para un gestor de extensiones de navegador. Desarrollada con React, Astro y CSS.",
+        "projects.web3.tech": [
+            "astro",
+            "react",
+            "css"
+        ],
+        "projects.web3.github": "https://github.com/LuguiM/BrowserExtensionManagerUi",
+        "projects.web3.link": "https://luguim.github.io/BrowserExtensionManagerUi/"
     },
     "enDataWeb": {
         "projects.web1.title": "World Ranks",
@@ -39,6 +50,18 @@
             "Tailwind"
         ],
         "projects.web2.github": "https://github.com/LuguiM/FrontStore",
-        "projects.web2.link": "https://front-store-lugui.vercel.app/"
+        "projects.web2.link": "https://front-store-lugui.vercel.app/",
+
+
+        "projects.web3.title": "Browser Extension Manager UI",
+        "projects.web3.key": "browserExtensionManagerUI",
+        "projects.web3.description": "User interface for a browser extension manager. Developed with React, Astro and CSS.",
+        "projects.web3.tech": [
+            "astro",
+            "react",
+            "css"
+        ],
+        "projects.web1.github": "https://github.com/LuguiM/World-Ranks",
+        "projects.web1.link": "https://luguim.github.io/World-Ranks/#/"
     }
 }
