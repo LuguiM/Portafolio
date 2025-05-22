@@ -18,10 +18,10 @@ const imageMap = {
 };
 ---
 
-<div class="flex flex-wrap gap-14 justify-center mt-4">
+<div class="grid md:grid-cols-2 md:grid-rows-2 gap-14 mt-4">
     {
         projects.map((project) => (
-            <Card title={project.title} img={imageMap[project.key]}>
+            <Card title={project.title} img={imageMap[project.key]} className="last:col-span-full mx-auto">
                 <p slot="description" class="text-wrap">{project.description}</p>
 
                 {Array.isArray(project.tech) &&
