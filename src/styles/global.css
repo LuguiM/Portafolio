@@ -95,13 +95,16 @@ input#menu-toggle:checked~ul {
     @apply flex justify-center items-center gap-1 rounded-lg px-4 py-2
 }
 
+
 .base-button.outlined {
-    @apply border-1 border-primary dark:border-aqua text-primary dark:text-white
+    @apply border-1 border-primary dark:border-aqua text-primary dark:text-white hover:bg-ligth-blue hover:text-white
 }
 
 .base-button.filled {
-    @apply bg-primary dark:bg-aqua text-white hover:bg-aqua dark:bg-ligth-blue transition duration-300 ease-in-out
+    @apply bg-primary dark:bg-aqua text-white hover:bg-aqua dark:bg-ligth-blue transition duration-300 ease-in-out hover:bg-accent
 }
+
+
 
 /* tech */
 .tech-card-container {
