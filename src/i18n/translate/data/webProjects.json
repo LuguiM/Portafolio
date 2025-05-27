@@ -29,7 +29,17 @@
             "css"
         ],
         "projects.web3.github": "https://github.com/LuguiM/BrowserExtensionManagerUi",
-        "projects.web3.link": "https://luguim.github.io/BrowserExtensionManagerUi/"
+        "projects.web3.link": "https://luguim.github.io/BrowserExtensionManagerUi/",
+
+        "projects.web4.title": "Conference Ticket Generator",
+        "projects.web4.key": "conferenceTicketGenerator",
+        "projects.web4.description": "Aplicación web para la generación de un Ticket para una conferencia. Desarrollado con VueJS, PrimeVue",
+        "projects.web4.tech": [
+            "vue",
+            "primevue"
+        ],
+        "projects.web4.github": "https://github.com/LuguiM/Conference-ticket-generator",
+        "projects.web4.link": "https://luguim.github.io/Conference-ticket-generator/"
     },
     "enDataWeb": {
         "projects.web1.title": "World Ranks",
@@ -52,7 +62,6 @@
         "projects.web2.github": "https://github.com/LuguiM/FrontStore",
         "projects.web2.link": "https://front-store-lugui.vercel.app/",
 
-
         "projects.web3.title": "Browser Extension Manager UI",
         "projects.web3.key": "browserExtensionManagerUI",
         "projects.web3.description": "User interface for a browser extension manager. Developed with React, Astro and CSS.",
@@ -61,7 +70,17 @@
             "react",
             "css"
         ],
-        "projects.web1.github": "https://github.com/LuguiM/World-Ranks",
-        "projects.web1.link": "https://luguim.github.io/World-Ranks/#/"
+        "projects.web3.github": "https://github.com/LuguiM/BrowserExtensionManagerUi",
+        "projects.web3.link": "https://luguim.github.io/BrowserExtensionManagerUi/",
+
+        "projects.web4.title": "Conference Ticket Generator",
+        "projects.web4.key": "conferenceTicketGenerator",
+        "projects.web4.description": "App web for a conference ticket generator. Developed with VueJs and PrimeVue",
+        "projects.web4.tech": [
+            "vue",
+            "primevue"
+        ],
+        "projects.web4.github": "https://github.com/LuguiM/Conference-ticket-generator",
+        "projects.web4.link": "https://luguim.github.io/Conference-ticket-generator/"
     }
 }
