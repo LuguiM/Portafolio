@@ -32,8 +32,8 @@
     "projects.web5.key": "productListCart",
     "projects.web5.description": "Aplicación web para la gestión de un carrito de compras de productos. Desarrollado con VueJS, Vuetify y Pinia",
     "projects.web5.tech": ["vue", "vuetify"],
-    "projects.web5.github": "https://github.com/LuguiM/product-list-cart",
-    "projects.web5.link": "https://luguim.github.io/product-list-cart/"
+    "projects.web5.github": "https://github.com/LuguiM/product-list-card",
+    "projects.web5.link": "https://luguim.github.io/product-list-card/"
   },
   "enDataWeb": {
     "projects.web1.title": "World Ranks",
