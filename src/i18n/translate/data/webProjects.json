@@ -1,86 +1,74 @@
 {
-    "esDataWeb": {
-        "projects.web1.title": "World Ranks",
-        "projects.web1.key": "worldRanks",
-        "projects.web1.description": "Aplicación web que muestra el ranking de los países por diferentes categorías. Utiliza la API de REST Countries y está desarrollada con Vue y Tailwind.",
-        "projects.web1.tech": [
-            "vue",
-            "Tailwind"
-        ],
-        "projects.web1.github": "https://github.com/LuguiM/World-Ranks",
-        "projects.web1.link": "https://luguim.github.io/World-Ranks/#/",
+  "esDataWeb": {
+    "projects.web1.title": "World Ranks",
+    "projects.web1.key": "worldRanks",
+    "projects.web1.description": "Aplicación web que muestra el ranking de los países por diferentes categorías. Utiliza la API de REST Countries y está desarrollada con Vue y Tailwind.",
+    "projects.web1.tech": ["vue", "Tailwind"],
+    "projects.web1.github": "https://github.com/LuguiM/World-Ranks",
+    "projects.web1.link": "https://luguim.github.io/World-Ranks/#/",
 
-        "projects.web2.title": "FrontStore",
-        "projects.web2.key": "frontStore",
-        "projects.web2.description": "Landing page de una tienda online ficticia. Desarrollada con React y Tailwind.",
-        "projects.web2.tech": [
-            "react",
-            "Tailwind"
-        ],
-        "projects.web2.github": "https://github.com/LuguiM/FrontStore",
-        "projects.web2.link": "https://luguim.github.io/FrontStore/",
+    "projects.web2.title": "FrontStore",
+    "projects.web2.key": "frontStore",
+    "projects.web2.description": "Landing page de una tienda online ficticia. Desarrollada con React y Tailwind.",
+    "projects.web2.tech": ["react", "Tailwind"],
+    "projects.web2.github": "https://github.com/LuguiM/FrontStore",
+    "projects.web2.link": "https://luguim.github.io/FrontStore/",
 
-        "projects.web3.title": "Browser Extension Manager UI",
-        "projects.web3.key": "browserExtensionManagerUI",
-        "projects.web3.description": "Interfaz de usuario para un gestor de extensiones de navegador. Desarrollada con React, Astro y CSS.",
-        "projects.web3.tech": [
-            "astro",
-            "react",
-            "css"
-        ],
-        "projects.web3.github": "https://github.com/LuguiM/BrowserExtensionManagerUi",
-        "projects.web3.link": "https://luguim.github.io/BrowserExtensionManagerUi/",
+    "projects.web3.title": "Browser Extension Manager UI",
+    "projects.web3.key": "browserExtensionManagerUI",
+    "projects.web3.description": "Interfaz de usuario para un gestor de extensiones de navegador. Desarrollada con React, Astro y CSS.",
+    "projects.web3.tech": ["astro", "react", "css"],
+    "projects.web3.github": "https://github.com/LuguiM/BrowserExtensionManagerUi",
+    "projects.web3.link": "https://luguim.github.io/BrowserExtensionManagerUi/",
 
-        "projects.web4.title": "Conference Ticket Generator",
-        "projects.web4.key": "conferenceTicketGenerator",
-        "projects.web4.description": "Aplicación web para la generación de un Ticket para una conferencia. Desarrollado con VueJS, PrimeVue",
-        "projects.web4.tech": [
-            "vue",
-            "primevue"
-        ],
-        "projects.web4.github": "https://github.com/LuguiM/Conference-ticket-generator",
-        "projects.web4.link": "https://luguim.github.io/Conference-ticket-generator/"
-    },
-    "enDataWeb": {
-        "projects.web1.title": "World Ranks",
-        "projects.web1.key": "worldRanks",
-        "projects.web1.description": "Web application that shows the ranking of countries by different categories. It uses the REST Countries API and is developed with Vue and Tailwind.",
-        "projects.web1.tech": [
-            "vue",
-            "Tailwind"
-        ],
-        "projects.web1.github": "https://github.com/LuguiM/World-Ranks",
-        "projects.web1.link": "https://luguim.github.io/World-Ranks/#/",
+    "projects.web4.title": "Conference Ticket Generator",
+    "projects.web4.key": "conferenceTicketGenerator",
+    "projects.web4.description": "Aplicación web para la generación de un Ticket para una conferencia. Desarrollado con VueJS, PrimeVue",
+    "projects.web4.tech": ["vue", "primevue"],
+    "projects.web4.github": "https://github.com/LuguiM/Conference-ticket-generator",
+    "projects.web4.link": "https://luguim.github.io/Conference-ticket-generator/",
 
-        "projects.web2.title": "FrontStore",
-        "projects.web2.key": "frontStore",
-        "projects.web2.description": "Landing page of a fictitious online store. Developed with React and Tailwind.",
-        "projects.web2.tech": [
-            "react",
-            "Tailwind"
-        ],
-        "projects.web2.github": "https://github.com/LuguiM/FrontStore",
-        "projects.web2.link": "https://front-store-lugui.vercel.app/",
+    "projects.web5.title": "Product List Cart",
+    "projects.web5.key": "productListCart",
+    "projects.web5.description": "Aplicación web para la gestión de un carrito de compras de productos. Desarrollado con VueJS, Vuetify y Pinia",
+    "projects.web5.tech": ["vue", "vuetify"],
+    "projects.web5.github": "https://github.com/LuguiM/product-list-cart",
+    "projects.web5.link": "https://luguim.github.io/product-list-cart/"
+  },
+  "enDataWeb": {
+    "projects.web1.title": "World Ranks",
+    "projects.web1.key": "worldRanks",
+    "projects.web1.description": "Web application that shows the ranking of countries by different categories. It uses the REST Countries API and is developed with Vue and Tailwind.",
+    "projects.web1.tech": ["vue", "Tailwind"],
+    "projects.web1.github": "https://github.com/LuguiM/World-Ranks",
+    "projects.web1.link": "https://luguim.github.io/World-Ranks/#/",
 
-        "projects.web3.title": "Browser Extension Manager UI",
-        "projects.web3.key": "browserExtensionManagerUI",
-        "projects.web3.description": "User interface for a browser extension manager. Developed with React, Astro and CSS.",
-        "projects.web3.tech": [
-            "astro",
-            "react",
-            "css"
-        ],
-        "projects.web3.github": "https://github.com/LuguiM/BrowserExtensionManagerUi",
-        "projects.web3.link": "https://luguim.github.io/BrowserExtensionManagerUi/",
+    "projects.web2.title": "FrontStore",
+    "projects.web2.key": "frontStore",
+    "projects.web2.description": "Landing page of a fictitious online store. Developed with React and Tailwind.",
+    "projects.web2.tech": ["react", "Tailwind"],
+    "projects.web2.github": "https://github.com/LuguiM/FrontStore",
+    "projects.web2.link": "https://front-store-lugui.vercel.app/",
 
-        "projects.web4.title": "Conference Ticket Generator",
-        "projects.web4.key": "conferenceTicketGenerator",
-        "projects.web4.description": "App web for a conference ticket generator. Developed with VueJs and PrimeVue",
-        "projects.web4.tech": [
-            "vue",
-            "primevue"
-        ],
-        "projects.web4.github": "https://github.com/LuguiM/Conference-ticket-generator",
-        "projects.web4.link": "https://luguim.github.io/Conference-ticket-generator/"
-    }
+    "projects.web3.title": "Browser Extension Manager UI",
+    "projects.web3.key": "browserExtensionManagerUI",
+    "projects.web3.description": "User interface for a browser extension manager. Developed with React, Astro and CSS.",
+    "projects.web3.tech": ["astro", "react", "css"],
+    "projects.web3.github": "https://github.com/LuguiM/BrowserExtensionManagerUi",
+    "projects.web3.link": "https://luguim.github.io/BrowserExtensionManagerUi/",
+
+    "projects.web4.title": "Conference Ticket Generator",
+    "projects.web4.key": "conferenceTicketGenerator",
+    "projects.web4.description": "App web for a conference ticket generator. Developed with VueJs and PrimeVue",
+    "projects.web4.tech": ["vue", "primevue"],
+    "projects.web4.github": "https://github.com/LuguiM/Conference-ticket-generator",
+    "projects.web4.link": "https://luguim.github.io/Conference-ticket-generator/",
+
+    "projects.web5.title": "Product List Cart",
+    "projects.web5.key": "productListCart",
+    "projects.web5.description": "Web application for managing a product shopping cart. Developed with VueJS, Vuetify and Pinia",
+    "projects.web5.tech": ["vue", "vuetify"],
+    "projects.web5.github": "https://github.com/LuguiM/product-list-cart",
+    "projects.web5.link": "https://luguim.github.io/product-list-cart/"
+  }
 }
